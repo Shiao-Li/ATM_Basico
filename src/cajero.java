@@ -29,6 +29,7 @@ public class cajero {
         return opcion;
     }
 
+    //metodo para depositar
     public void depositar() {
         double cant;
         System.out.print("Cantidad a depositar: ");
@@ -38,6 +39,7 @@ public class cajero {
         System.out.println("Su saldo: " + getSaldoBanco());
     }
 
+    //metodo para retirar
     public void retirar() {
         double cant;
         System.out.print("Cantidad a retirar: ");
@@ -51,6 +53,7 @@ public class cajero {
         }
     }
 
+    //setters y getters de los atributos
     public Scanner getSc() {
         return sc;
     }

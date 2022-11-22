@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        //obejeto cajero
         cajero cj = new cajero();
         String op;
         int casos;
@@ -12,7 +13,7 @@ public class main {
                 case 1:
                     System.out.println("\t\tCuenta de ahorros EPN");
                     System.out.println("\nNombre del titular: " + cj.getNombre_titular());
-                    System.out.println("Numero de cdeula del titutar: " + cj.getNum_ced());
+                    System.out.println("Numero de cedeula del titutar: " + cj.getNum_ced());
                     System.out.println("Numero de cuenta: " + cj.getNum_cta());
                     System.out.println("---------------------------------------");
                     System.out.println("TOTAL EN LA CUENTA: " + cj.getSaldoBanco());
@@ -24,9 +25,6 @@ public class main {
                 case 3:
                     cj.depositar();
                     break;
-                case 4:
-
-                    break;
                 default:
                     System.out.println("°° OPCION NO EXISTENTE EN EL ATM °°");
 
@@ -34,7 +32,6 @@ public class main {
             System.out.print("\nDeseas continuar en la opciones del ATM?? (s/n):");
             op = sc.next().toLowerCase();
         } while (op.equals("s"));
-
 
     }
 }
