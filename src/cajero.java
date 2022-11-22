@@ -53,7 +53,7 @@ public class cajero {
         }
     }
 
-    //setters y getters de los atributos
+    //setters y getters de los atributoss
     public Scanner getSc() {
         return sc;
     }
